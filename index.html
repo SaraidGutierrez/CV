@@ -2,52 +2,239 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title> Saraid Gutiérrez Website</title>
+    <title>Saraid Gutiérrez Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: larger;
+        color: #ffffff;
+        margin: 20px;
+        background-color: #000a23;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      th{
+      color: black;
+      padding: 10px;
+      }
+       td {
+        padding: 10px;
+        
+      }
+
+      h1, h2, h3 {
+        color: #94b8d7
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid #ccc;
+        margin: 20px 0;
+      }
+
+      img {
+        width: 200px;
+        border-radius: 50%;
+      }
+
+      .about-me {
+        margin-bottom: 20px;
+      }
+
+      .experience-table {
+        width: 100%;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+      }
+
+      .experience-table th {
+        background-color: #557996;
+      }
+
+      ul, ol {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+
+      .hard-skills-table, .soft-skills-table {
+        margin-bottom: 20px;
+      }
+
+      .hard-skills-table td, .soft-skills-table td {
+        vertical-align: top;
+      }
+
+      .personal-info ul {
+        padding-left: 20px;
+      }
+      a {
+        color: rgb(255, 255, 255); 
+        text-decoration: underline; 
+      }
+
+        a:hover {
+          text-decoration: none; 
+        }
+    </style>
   </head>
   <body>
     <table cellspacing="20">
       <tr>
-        <td><img src="https://media-exp1.licdn.com/dms/image/C5603AQH0CI2gYQnubQ/profile-displayphoto-shrink_400_400/0/1602344345849?e=1668038400&v=beta&t=qP2mkHijQ1RNZ0LtnEzwMOAYjwR7I_Men86jZDJWtXU" alt="Foto de perfil de sara"></td>
-        <td><h1>Saraid Gutierrez Mateos</h1>
-    <p><em>MSc Student and Pastry cook at <strong><a href="https://www.facebook.com/pasteleskokoro">Kokoro</a></strong></em></p>
-    <p>I'm a student at the University of Veracruz and a schoolarship holder of CONACyT. My intervention 
-        proyect is about solid waste management in urban retails.</p></td>
+        <td><img src="./img/Saraid.jpeg" alt="Foto de perfil de sara"></td>
+        <td>
+          <h1>Saraid Gutierrez Mateos</h1>
+          <p>Hello! I'm a Junior FullStack Web Developer.</p>
+        </td>
       </tr>
     </table>
-       
     <hr>
-    <h3>Education</h3>
-    <ul>
-        <li>2022-Currently. Master of Environmental Science - <a href="https://www.uv.mx/pozarica/cba/">University of Veracruz FCBA.</a> </li>
-        <li>2015-2018.      Petroleumn Engineering - <a href="https://www.uv.mx/pozarica/cq/">University of Veracruz FCQ.</a></li> 
-        <li>2012-1016.      Environmental Engineering - <a href="https://www.uv.mx/pozarica/cq/">University of Veracruz FCQ.</a></li>
-    </ul>
+    <h3>About me</h3>
+    <div class="about-me">
+      <p>👩‍💻 I am a passionate Junior Full Stack Developer with a background in implementing Management Systems (ISO) and vocational training. My engineering education has provided me with strong skills in teamwork, information documentation, and problem-solving.</p>
+      <p>🚀 I have knowledge in agile methodologies such as SCRUM and experience in Front End and Back End development using technologies like JavaScript, React, Redux, HTML5, PostgreSQL, Sequelize, and Node.js. I am highly organized, results-oriented, and adaptable to new challenges.</p>
+      <p>🌍 Furthermore, I have an English proficiency level of B2, which enables me to effectively communicate in bilingual environments.</p>
+    </div>
     <hr>
-    <h3>Work Experience</h3>
-    <table border="1">
-      <thead><tr><th>Year</th><th>Description</th><th>Company name</th></tr></thead>
+    <h3>Academic Experience</h3>
+    <table class="experience-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Institution</th>
+          <th>Description</th>
+          <th>Technologies</th>
+        </tr>
+      </thead>
       <tbody>
-       
-        <tr><td>2019-2022</td> <td>QHSE</td><td>E&G Services of Mexico</td></tr>
-        <tr><td>2019</td>      <td>QHSE</td><td>Environmental and Ecological Services</td></tr>
-        <tr><td>2019</td>      <td>Administrative Assistant</td><td>Nuvoil</td></tr>
-        <tr><td>2019</td>      <td>SIG Manager</td><td>DMC Cluster</td></tr>
+        <tr>
+          <td>2022-2023</td>
+          <td>Soy Henry Bootcamp</td>
+          <td>Designed and developed a physical movie shopping app that included features such as authentication, email delivery, integrated payment gateway, AI chat, different admin roles, search functionality, combined filters, sorting, and fetching information from its own API.</td>
+          <td>
+            <ul>
+              <li>Front-end: JavaScript, React, Redux, HTML5, Bootstrap</li>
+              <li>Back-end: Node.js, Axios, Express</li>
+              <li>Other tools: Firebase, Emailjs, Kommunicate, Stripe</li>
+              <li>Database: PostgreSQL and Sequelize</li>
+            </ul>
+          </td>
+        </tr>
       </tbody>
     </table>
     <hr>
-    <h3>Hobbies</h3>
-    <ol>
-        <li>Cake decorating</li>
-        <li>Strategy board games</li>
-        <li>Comics</li>
-    </ol>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr><td>Python</td><td>⭐</td><td>JavaScript</td><td>⭐</td></tr>
-      <tr><td>Visual Basic</td><td>⭐</td><td>Loquesea</td><td>⭐⭐</td></tr>
+    <h3>Work Experience</h3>
+    <table class="experience-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Position</th>
+          <th>Company name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2019-2022</td>
+          <td>QHSE</td>
+          <td>E&G Services of Mexico</td>
+          
+          <td><ul>
+            <li>
+              Led the implementation of the Quality Management System, resulting in significant improvements in process efficiency.
+            </li>
+            <li>
+              Contributed to a 10% increase in company revenue through the creation and management of a WordPress website to showcase and offer our services.
+            </li>
+            <li>
+              Conducted comprehensive staff training, ensuring a highly competent and dedicated team.
+            </li>
+          </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>2018-2019</td>
+          <td>Administrative Assistant</td>
+          <td>Geolis</td>
+          <td><ul><li>
+            Responsible for quoting overseas spare parts for pumps in collaboration with suppliers in the United States.
+          </li></ul></td>
+        </tr>
+      </tbody>
     </table>
     <hr>
-    <h3>Link to <a href="sara.html">Personal Information</a></h3>
+    <h3>Education</h3>
+    <ul>
+      <li>2022-2023. FullStack Web Developer - <a href="https://www.soyhenry.com/mx">Soy Henry.</a></li>
+      <li>2015-2018. Petroleumn Engineering - <a href="https://www.uv.mx/pozarica/cq/">University of Veracruz FCQ.</a></li>
+      <li>2012-1016. Environmental Engineering - <a href="https://www.uv.mx/pozarica/cq/">University of Veracruz FCQ.</a></li>
+    </ul>
+    <hr>
+    <h3>Hobbies</h3>
+    <ul>
+      <li>🎂Cake decorating</li>
+      <li>🎲Strategy board games</li>
+      <li>📚Comics</li>
+    </ul>
+    <hr>
+    <h3>Hard Skills</h3>
+    <table cellspacing="10" class="hard-skills-table">
+      <tr>
+        <td>⭐</td>
+        <td>Programming Languages: JavaScript</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Frameworks: React, Redux, Node.js, Express</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Database: PostgreSQL, Sequelize</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Tools: Git, Slack</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Agile Methodology: Scrum</td>
+      </tr>
+    </table>
+    <hr>
+    <h3>Soft Skills</h3>
+    <table cellspacing="10" class="soft-skills-table">
+      <tr>
+        <td>⭐</td>
+        <td>Effective communication</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Analytical thinking</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Adaptability and flexibility</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Teamwork</td>
+      </tr>
+      <tr>
+        <td>⭐</td>
+        <td>Problem-solving</td>
+      </tr>
+    </table>
+    <hr>
+    <h2>Personal information</h2>
+    <p class="personal-info">
+      <ul>
+        <li><strong>E-mail:</strong> saraidmateos23@gmail.com</li>
+        <li><strong>Location:</strong> Veracruz, México</li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saraidmateos23/">Saraid Gutiérrez Mateos</a></li>
+        <li><strong>Github:</strong> <a href="https://github.com/SaraidGutierrez">Saraid Gutiérrez Mateos</a></li>
+      </ul>
+    </p>
   </body>
 </html>
